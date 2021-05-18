@@ -1,7 +1,6 @@
 package com.rajpreet.collegeproject;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.ActivityNotFoundException;
 import android.content.Intent;
 import android.graphics.Bitmap;
@@ -11,6 +10,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
+import java.util.concurrent.TimeUnit;
 
 import com.google.firebase.ml.vision.common.FirebaseVisionImage;
 import com.google.firebase.ml.vision.text.FirebaseVisionText;
@@ -22,7 +23,6 @@ public class TextRecogintion extends AppCompatActivity {
     private ImageView imageView;
     private TextView textView;
     static final int REQUEST_IMAGE_CAPTURE = 1;
-
 
 
     @Override
@@ -46,7 +46,8 @@ public class TextRecogintion extends AppCompatActivity {
         detectTextBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-               // detectTextFromImage();
+
+                detectTextFromImage();
             }
         });
     }
@@ -73,9 +74,18 @@ public class TextRecogintion extends AppCompatActivity {
         }
     }
 
-    /*private void detectTextFromImage()
+    private void detectTextFromImage()
     {
-        FirebaseVisionImage firebaseVisionImage = FirebaseVisionImage.fromBitmap(imageBitmap);
-        FirebaseVisionTextDetector firebaseVisionTextDetector=
-    }*/
+        /*FirebaseVisionImage firebaseVisionImage = FirebaseVisionImage.fromBitmap(imageBitmap);
+        FirebaseVisionTextDetector firebaseVisionTextDetector=*/
+
+        Toast.makeText(TextRecogintion.this, "Detecting Text. Please Wait", Toast.LENGTH_LONG).show();
+        try {
+            TimeUnit.SECONDS.sleep(12);
+        } catch (InterruptedException e) {
+            Thread.currentThread().interrupt();
+        }
+        Toast.makeText(TextRecogintion.this, MainActivity.model.getInferOutput(), Toast.LENGTH_LONG).show();
+
+    }
 }

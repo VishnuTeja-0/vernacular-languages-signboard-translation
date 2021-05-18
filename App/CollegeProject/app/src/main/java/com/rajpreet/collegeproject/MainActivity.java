@@ -23,6 +23,8 @@ public class MainActivity extends AppCompatActivity {
 
     private int counter = 5;
 
+    static public ModelInfer model = new ModelInfer();
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -65,7 +67,7 @@ public class MainActivity extends AppCompatActivity {
                         Toast.makeText(MainActivity.this,"Login Successful!",Toast.LENGTH_SHORT).show();
 
                         Intent intent = new Intent(MainActivity.this,TextRecogintion.class);
-                       startActivity(intent);
+                        startActivity(intent);
                     }
 
 
