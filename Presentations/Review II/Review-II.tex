@@ -9,7 +9,7 @@
 \usecolortheme{default}
 
 \title[21G378383]{Translation / Transliteration of Vernacular Languages from Signboards}
-\subtitle{Project ID:21G378383\\Review - II}
+\subtitle{Project ID:21G378383\\Review - III}
 \author[SRM Institute of Science \& Technology]{Group~Members\\RA1711003030378~Vishnu~Teja~Chikkala\\RA1711003030383~Rajpreet~Srivastav\\ \medskip{Supervised By:\\Mr.~Sunil~Kumar\\Assistant~Professor}}
 \institute[]{Department of Computer Science \& Engineering\\Faculty of Engineering \& Technology\\SRM Institute of Science \& Technology}
 \logo{\includegraphics[scale=.4]{srm_logo}}
@@ -22,9 +22,9 @@
 		\date{}
 	\end{frame}
 	\begin{frame}[allowframebreaks]{Table of Contents} %we can expand the table of contents in more than on frame
-		\tableofcontents[sections={1-4}]
+		\tableofcontents[sections={1-5}]
 		\framebreak
-		\tableofcontents[sections={5-8}]
+		\tableofcontents[sections={6-10}]
 	\end{frame}
 	
 \section{Objective}
@@ -155,6 +155,11 @@
 	\end{figure}
 	\framebreak
 	\begin{figure}
+				{\includegraphics[scale=.3]{Recog_Model_1}}
+				\caption{Text Recognition Model}
+				\label{Recog_Model_1}
+	\end{figure}
+	\begin{figure}
 				{\includegraphics[scale=.3]{Translit_Model_1}}
 				\caption{Text Transliteration Model}
 				\label{Translit_Model_1}
@@ -166,14 +171,49 @@
 	\end{figure}
 \end{frame}
 
-\section{Expected Outcomes}
+\section{Experimental Results}
 \begin{frame}[allowframebreaks]{Expected Outcomes}
-\begin{itemize}
-\item Achieve greater than 80 \% accuracy on both train and validation / test datasets, across all models, after training, with optimal bias-variance tradeoff and set of tuned hyperparameters.
-\item Propose general scalable and upgradable framework to similarly train model on other Indian languages / scripts as well as on longer pieces of text. 
-\item Optimize the performance of the app w.r.t. model, to deliver seamless user experience.
-\item Design app to be intuitive, easy-to-use and non-dependent on the internet.
-\end{itemize} 
+
+	\begin{figure}
+				{\includegraphics[scale=.3]{Detection_Training_Result}}
+				\caption{Text Detection Training}
+				\label{Detection_Training_Result}
+	\end{figure}
+
+	\begin{figure}
+				{\includegraphics[scale=.3]{Detection_Testing_Result}}
+				\caption{Text Detection Testing}
+				\label{Detection_Testing_Result}
+	\end{figure}
+
+	\begin{figure}
+				{\includegraphics[scale=.3]{Recognition_Result}}
+				\caption{Text Recognition Training and Testing}
+				\label{Recognition_Result}
+	\end{figure}
+
+	\begin{figure}
+				{\includegraphics[scale=.3]{Transliteration_Training_Result}}
+				\caption{Text Transliteration Training}
+				\label{Transliteration_Training_Result}
+	\end{figure}
+	\begin{figure}
+				{\includegraphics[scale=.3]{Transliteration_Testing_Result}}
+				\caption{Text Transliteration Testing}
+				\label{Transliteration_Testing_Result}
+	\end{figure}
+	\begin{figure}
+           \begin{subfigure}[b]{0.3\linewidth}
+			{\includegraphics[width=\linewidth]{App_Result_1}}
+			\label{App}
+	\end{subfigure}
+	\begin{subfigure}[b]{0.3\linewidth}
+			{\includegraphics[width=\linewidth]{App_Result_2}}
+			\label{App}
+           \end{subfigure}
+	\caption{App Result}
+	\end{figure}
+
 \end{frame}
 
 \section{References}
