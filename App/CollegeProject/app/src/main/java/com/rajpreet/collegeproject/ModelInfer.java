@@ -10,11 +10,15 @@ public class ModelInfer {
      private String[][] words = {ex1, ex2, ex3};
 
      public String getInferOutput(){
-         String[] possOutput = words[itr];
-         Random rand = new Random();
-         String output = possOutput[rand.nextInt(possOutput.length)];
-         itr = itr + 1;
-         return output;
+         if (itr > 2){
+             return "";
+         }
+         else {
+             String[] possOutput = words[itr];
+             Random rand = new Random();
+             String output = possOutput[rand.nextInt(possOutput.length)];
+             itr = itr + 1;
+             return output;
+         }
      }
-
 }
