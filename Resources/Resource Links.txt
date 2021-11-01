@@ -1,4 +1,0 @@
-(Main Project) https://ai4bharat.org/articles/sign-board
-(Running ANNs in Android) https://heartbeat.fritz.ai/running-artificial-neural-networks-in-android-using-opencv-3c5640778578#abfd
-(Running trained model in Android) https://nirosh.medium.com/step-by-step-guide-to-run-your-trained-neural-network-model-on-android-part-ii-fa4ae35d4722
-(Latex tutorial) https://www.latex-tutorial.com/installation/
